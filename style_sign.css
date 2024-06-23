@@ -18,7 +18,7 @@ body {
 .left-section {
     background-color: white;
     color: white;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +26,7 @@ body {
     padding: 20px;
     position: relative;
     /* Added position relative */
+   
 }
 
 .left-section .logo {
@@ -38,36 +39,49 @@ body {
     width: 100px;
     /* Adjust logo size */
 }
+.left-section .color_above{
+position: absolute;
+    /* Position absolute */
+    top: 100px;
+    /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    margin-top: 37%;
+}
 
 .left-section .business-woman {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-bottom: 20px;
+   z-index: 0;
 }
 
 .left-section h3 {
     margin: 20px 0;
+    z-index: 2;
+    color: white;
 }
 
 .right-section {
     background-color: white;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
-
+/* top margin for the empty space above the input  */
 .form-container {
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30%;
 }
 
 .form-container input {
-    width: 80%;
+    width: 70%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -78,12 +92,13 @@ body {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .form-container .options a {
     color: orange;
     text-decoration: none;
+   
 }
 
 .form-container button {
@@ -91,7 +106,8 @@ body {
     padding: 10px;
     margin: 10px 0;
     border: none;
-    border-radius: 5px;
+    /* border-radius to make btn round*/
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s ease;
@@ -104,21 +120,27 @@ body {
 .form-container .sign-in-btn {
     background-color: orange;
     color: white;
+    width: 30%;
+    padding: 5px;
+   
 }
 
 .form-container .google-sign-in-btn {
     background-color: white;
     color: black;
+    padding: 7px;
 }
 
 .form-container .apple-sign-in-btn {
     background-color: #000;
     color: white;
+    padding: 7px;
 }
 
 .form-container .sign-up-options-btn {
     background-color: orange;
     color: white;
+    padding: 7px;
 }
 
 /* Responsive Design */

@@ -1,1 +1,149 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navlist li {
+    margin: 0;
+}
+
+.navlist a {
+    font-weight: bold;
+    color: #333;
+}
+
+.navlist a.active,
+.navlist a:hover {
+    color: #ff6600;
+    /* Main color for Gibbly */
+}
+
+/* Home Section Styles */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.text-content p span {
+    font-weight: bold;
+    color: #ff6600;
+    /* Main color for Gibbly */
+}
+
+.text-content .btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.text-content .btn:hover {
+    background-color: #e65c00;
+    /* Slightly darker shade for hover effect */
+}
+
+.text-content .subtext {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.image-content {
+    flex-shrink: 0;
+    margin-left: 50px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 2px solid #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navlist {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

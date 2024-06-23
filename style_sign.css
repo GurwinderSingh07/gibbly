@@ -1,0 +1,170 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    background-color: white;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    /* Added position relative */
+}
+
+.left-section .logo {
+    position: absolute;
+    /* Position absolute */
+    top: 20px;
+    /* Adjust as needed */
+    left: 20px;
+    /* Adjust as needed */
+    width: 100px;
+    /* Adjust logo size */
+}
+
+.left-section .business-woman {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.left-section h3 {
+    margin: 20px 0;
+}
+
+.right-section {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container .options {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.form-container .options a {
+    color: orange;
+    text-decoration: none;
+}
+
+.form-container button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.form-container button:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.form-container .sign-in-btn {
+    background-color: orange;
+    color: white;
+}
+
+.form-container .google-sign-in-btn {
+    background-color: white;
+    color: black;
+}
+
+.form-container .apple-sign-in-btn {
+    background-color: #000;
+    color: white;
+}
+
+.form-container .sign-up-options-btn {
+    background-color: orange;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .left-section {
+        order: 2;
+    }
+
+    .right-section {
+        order: 1;
+        padding: 20px;
+    }
+
+    .form-container input,
+    .form-container button {
+        width: 90%;
+    }
+
+    .form-container .options {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    .form-container .options a {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .left-section .logo {
+        width: 80px;
+    }
+
+    .left-section h3 {
+        font-size: 1.2rem;
+    }
+}
